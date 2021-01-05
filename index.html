@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sticky-navbar</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="mailto:ajarek@poczta.onet.pl"><img src="logo2.png" alt=""></a>
+        </div>
+        <nav>
+            <a href="" style="color:red">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome To My Website</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, porro!</p>
+    </section>
+    <article>
+        <h3>Content One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem mollitia molestias inventore perspiciatis,
+            laboriosam, pariatur animi necessitatibus error a minima nesciunt, soluta dolor similique itaque quibusdam
+            doloribus. Veritatis quod atque similique illum et sed nobis qui alias! Dolore inventore rerum porro iure
+            sed reprehenderit asperiores aliquam veniam at, exercitationem animi fugit quam consectetur aspernatur. Sit,
+            quasi labore repudiandae consequatur mollitia facere iusto nam culpa a dolores veritatis beatae molestiae
+            recusandae voluptas cupiditate, quas veniam sequi laboriosam. Eaque explicabo iure, exercitationem debitis
+            accusantium dignissimos tempora cupiditate possimus? Eius esse cumque dolor sit odit corporis quasi rem.
+            Quia officiis saepe nobis nulla!</p>
+        <h3>Content Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem mollitia molestias inventore perspiciatis,
+            laboriosam, pariatur animi necessitatibus error a minima nesciunt, soluta dolor similique itaque quibusdam
+            doloribus. Veritatis quod atque similique illum et sed nobis qui alias! Dolore inventore rerum porro iure
+            sed reprehenderit asperiores aliquam veniam at, exercitationem animi fugit quam consectetur aspernatur. Sit,
+            quasi labore repudiandae consequatur mollitia facere iusto nam culpa a dolores veritatis beatae molestiae
+            recusandae voluptas cupiditate, quas veniam sequi laboriosam. Eaque explicabo iure, exercitationem debitis
+            accusantium dignissimos tempora cupiditate possimus? Eius esse cumque dolor sit odit corporis quasi rem.
+            Quia officiis saepe nobis nulla!</p>
+    </article>
+
+
+    <script>
+        const header = document.querySelector('header');
+        const nav = document.querySelector('nav');
+
+        const fixNav = () => {
+            if (window.scrollY >header.offsetHeight + 150) {
+               header.classList.add('active');
+               
+            } else {
+               header.classList.remove('active');
+               
+            }
+        }
+        document.addEventListener('scroll', fixNav)
+    </script>
+</body>
+
+</html>
